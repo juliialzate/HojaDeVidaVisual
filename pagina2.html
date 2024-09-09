@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- FUNCIONA CORRECTAMENTE -->
+        <title>Hoja de vida organizada</title>
+        <script src="funciones.js" language="JavaScript1.2"></script>
+        <link rel="stylesheet" href="estilos2.css" />
+    </head>
+    <body>
+        <center>
+            <form method="get" action="pagina2.html">
+                
+                <div class="cuadro-blanco">
+                    <div class="cuadro-morado">
+                        <div class="columnas">
+                            <div class="columna-izquierda">
+                                <img id="imagenGenero" alt="Imagen de género">
+                            </div>
+                            <div class="columna-derecha">
+                                <h1><span id="nombre"></span></h1>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        
+
+                    <h3 class="titulo-seccion">1. Datos personales</h3>
+                        <div class="columnas">
+                            <div class="cuadro-amarillo">
+                                <p>Fecha de nacimiento:  <span id="nacimiento"></span></p>
+                                <p>Edad:  <span id="edad"></span></p>
+                                <p>Cedula de ciudadania:  <span id="cedula"></span></p>
+                                <p>Celular: <span id="celular"></span></p>
+
+                            </div>
+                            <div class="cuadro-amarillo">
+                                
+                                <p>Libreta militar: <span id="libreta"></span></p>
+                                <p>Correo electrónico: <span id="direccion"></span></p>
+                                <p>Ciudad de residencia: <span id="ciudad"></span></p>
+                                <p>Genero: <span id="genero"></span></p>
+                            </div>
+                        </div>
+
+                    <h3 class="titulo-seccion">2. Formacion académica</h3>
+                        <div class="columnas">
+                            <div class="cuadro-amarillo">
+                                <p>Primaria: <span id="primaria"></span></p>
+                                <p>Secundaria: <span id="secundaria"></span></p>
+                                <p>Grado colegio: <span id="gradocolegio"></span></p>
+                                <p>Tecnicos: <span id="tecnicos"></span></p>
+                                
+                            </div>
+                            <div class="cuadro-amarillo">
+                                <p>Tecnologo: <span id="tecnologo"></span></p>
+                                <p>Pregrado: <span id="pregrado"></span></p>
+                                <p>Universidad: <span id="universidad"></span></p>
+                                <p>Grado Universidad: <span id="gradou"></span></p>
+                                <p>Idiomas que maneja: <span id="idiomas"></span></p>
+                            </div>
+                        </div>
+
+                    <h3 class="titulo-seccion">3. Experiencia laboral</h3>
+                        <div class="columnas">
+                            <div class="cuadro-amarillo">
+                                <p>Puesto 1: <span id="puesto1"></span></p>
+                                <p>Puesto 2: <span id="puesto2"></span></p>
+                                <p>Puesto 3: <span id="puesto3"></span></p>
+                                <p>Empresa 1: <span id="empresa1"></span></p>
+                                <p>Empresa 2: <span id="empresa2"></span></p>
+                                <p>Empresa 3: <span id="empresa3"></span></p>
+                                
+                            </div>
+                            
+                            <div class="cuadro-amarillo">
+                                <p>Descripcion de primer puesto: <span id="descripcion1"></span></p>
+                                <p>Descripcion de segundo puesto: <span id="descripcion2"></span></p>
+                                <p>Descripcion de tercer puesto: <span id="descripcion3"></span></p>
+                                <p>Primera referencia laboral: <span id="duracion1"></span></p>
+                                <p>Segunda referencia laboral: <span id="duracion2"></span></p>
+                                <p>Referencia personal: <span id="duracion3"></span></p>
+                                
+                                
+                            </div>
+                        </div>
+                        <h3 class="titulo-seccion">3. Habilidades y objetivos </h3>
+                            <div class="cuadro-amarillo">
+                                <p>Habilidades personales: <span id="habilidad1"></span></p>
+                                <p>Habilidades profesionales:  <span id="habilidad2"></span></p>
+                                <p>Descripción de objetivos laborales:</p><div id="objetivos"></div>
+                    
+                            </div>
+                
+                </div>
+            </form>
+        </center>
+
+        <script>
+            // Asegurarse de que la función se ejecute cuando el contenido del DOM esté completamente cargado
+            document.addEventListener('DOMContentLoaded', function() {
+                mostrarImagenSegunGenero();
+            });
+        </script>
+
+
+    </body>
+</html>
